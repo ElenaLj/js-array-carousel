@@ -44,12 +44,18 @@ body {
     object-fit: cover;
 }
 
+.col-dx img {
+    height: calc(100% / 5);
+}
+
 /* *** thumbnail *** */
 .col-dx {
     width: 15%;
     height: 80vh;
     float: left;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-dx > div.small {

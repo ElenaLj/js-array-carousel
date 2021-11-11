@@ -1,10 +1,10 @@
 //alert("Hello World!")
 
 //inserisco immagine nella colonna di sinistra
-const myImage = document.querySelector(".col-sx");
+const slider = document.querySelector(".col-sx");
 
 let myFirst = `<img src="img/01.jpg" alt="img01">`
-myImage.innerHTML = myFirst;
+slider.innerHTML = myFirst;
 
 //inserisco immagine nella colonna di destra
 
@@ -21,5 +21,12 @@ let myThumbnail = document.querySelector(".col-dx");
 
 //creo ciclo 
 for (let i = 0; i < imagesArray.length; i++) {
-    myThumbnail.innerHTML += `<img src="${imagesArray[i]}" alt="img01">` 
+    myThumbnail.innerHTML += `<img src="${imagesArray[i]}" alt="">` 
 }
+
+//Quando clicco sulla freccia cambia immagine
+let up = document.querySelector(".arrow-up");
+let down = document.querySelector(".arrow-up");
+// myArrow.addEventListener("click", function() {
+//     for (var i = 0 ; )
+// })
