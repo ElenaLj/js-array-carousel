@@ -19,7 +19,7 @@ body {
 
 .container .slider {
     width: 80%;
-    height: 80vh;
+    /* height: 80vh; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,15 +30,24 @@ body {
     clear: both;
 }
 
+/* *** immagine grande *** */
 .col-sx {
     width: 85%;
-    height: 100%;
+    height: 80vh;
     float: left;
 }
 
+.col-sx img,
+.col-dx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* *** thumbnail *** */
 .col-dx {
     width: 15%;
-    height: 100%;
+    height: 80vh;
     float: left;
     position: relative;
 }
@@ -80,7 +89,7 @@ body {
 }
 
 /* *** debug *** */
-.debug .container {
+/* .debug .container {
     background-color: lightpink;
 }
 
@@ -98,4 +107,4 @@ body {
 
 .debug .col-dx > div.small {
     border: 1px solid black;
-}
+} */
