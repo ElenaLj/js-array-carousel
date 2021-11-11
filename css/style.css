@@ -40,6 +40,43 @@ body {
     width: 15%;
     height: 100%;
     float: left;
+    position: relative;
+}
+
+.col-dx > div.small {
+    height: calc(100% / 5);
+}
+
+.col-dx .arrow-up {
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-dx .arrow-down {
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-dx .arrow-up,
+.col-dx .arrow-down {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    opacity: .5;
+    line-height: 25px;
+    text-align: center;
+}
+
+.col-dx .arrow-up > i, 
+.col-dx .arrow-up > i {
+    font-size: 20px;
 }
 
 /* *** debug *** */
@@ -57,4 +94,8 @@ body {
 
 .debug .col-dx {
     background-color: rgb(90, 58, 156);
+}
+
+.debug .col-dx > div.small {
+    border: 1px solid black;
 }
