@@ -58,8 +58,13 @@ body {
     flex-direction: column;
 }
 
-.thumbnail > div.img-container {
+.thumbnail .img-container {
     height: calc(100% / 5);
+    display: none;
+}
+
+.thumbnail .active {
+    display: block;
 }
 
 .thumbnail .arrow-up {
