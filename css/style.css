@@ -35,8 +35,16 @@ body {
     width: 85%;
     height: 80vh;
     float: left;
+    position: relative;
 }
-
+.text {
+    color: white;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    text-align: left;
+}
 .slider img,
 .thumbnail img {
     width: 100%;

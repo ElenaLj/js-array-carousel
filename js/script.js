@@ -11,6 +11,14 @@ const imagesArray = [
     "img/05.jpg", // indice 4
 ];
 
+const title = [
+    'Svezia',
+    'Svizzera',
+    'Gran Bretagna',
+    'Germania',
+    'Paradise'
+]
+
 // 2) inserisco array in thumbnail
 
     // 2.1) indico a JS dove andare ad inserire array creando una variabile per il mio div di punta
