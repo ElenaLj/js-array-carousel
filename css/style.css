@@ -60,11 +60,10 @@ body {
 
 .thumbnail .img-container {
     height: calc(100% / 5);
-    display: none;
 }
 
 .thumbnail .active {
-    display: block;
+    border: 1px solid magenta;
 }
 
 .thumbnail .arrow-up {
@@ -92,6 +91,7 @@ body {
     opacity: .5;
     line-height: 25px;
     text-align: center;
+    z-index: 999;
 }
 
 .thumbnail .arrow-up > i, 

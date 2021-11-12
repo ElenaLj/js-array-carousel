@@ -18,17 +18,41 @@ const myThumbnail = document.querySelector(".thumbnail");
 
     // 2.2) uso un ciclo for per insierire le diverse immagini così da non ripetere stesso codice 
 
-    // 2.2b) creo una variabile let vuota che andrò ad inserire nel ciclo
-let thumbnailContent = "";
 
+    // ************** PARTE CHE NON FUNZIONA PERCHE' NASCONDE LE MIE FRECCE
+
+    // 2.2b) creo una variabile let vuota che andrò ad inserire nel ciclo
+// let thumbnailContent = "";
+
+// for (let i = 0; i < imagesArray.length; i++) {
+//     thumbnailContent += `
+//     <div class="img-container">
+//         <img src="${imagesArray[i]}" alt="">
+//     </div>
+//     `
+// }
+// console.log(thumbnailContent);
+
+    // 2.3) ora vado ad inserire nel div di punta il contenuto dinamico creato col ciclo for
+// myThumbnail.innerHTML = thumbnailContent;
+
+// **************/ PARTE CHE NON FUNZIONA PERCHE' NASCONDE LE MIE FRECCE
+
+
+// ***************** INSERENDO DIRETTAMENTE NEL CICLO SI VEDONO
 for (let i = 0; i < imagesArray.length; i++) {
-    thumbnailContent += `
+    myThumbnail.innerHTML += `
     <div class="img-container">
         <img src="${imagesArray[i]}" alt="">
     </div>
-    ` 
-    myThumbnail.innerHTML = thumbnailContent;
+    `
 }
+
+    // 2.4) devo aggiungere anche la classe active 
+const imgActive = document.querySelector(".img-container");
+imgActive.className = "img-container active";
+
+    
 
 //Quando clicco sulla freccia cambia immagine
 // let up = document.querySelector(".arrow-up");
