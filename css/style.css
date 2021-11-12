@@ -58,7 +58,7 @@ body {
     flex-direction: column;
 }
 
-.thumbnail > div.small {
+.thumbnail > div.img-container {
     height: calc(100% / 5);
 }
 
