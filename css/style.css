@@ -11,13 +11,13 @@ body {
 }
 
 /* *** contenuto pagina *** */
-
 .container {
    height: 100vh;
    position: relative;
 }
 
-.container .slider {
+/* *** contenitore degli elementi *** */
+.container .items-container {
     width: 80%;
     /* height: 80vh; */
     position: absolute;
@@ -31,25 +31,25 @@ body {
 }
 
 /* *** immagine grande *** */
-.col-sx {
+.slider {
     width: 85%;
     height: 80vh;
     float: left;
 }
 
-.col-sx img,
-.col-dx img {
+.slider img,
+.thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.col-dx img {
+/* .thumbnail img {
     height: calc(100% / 5);
-}
+} */
 
 /* *** thumbnail *** */
-.col-dx {
+.thumbnail {
     width: 15%;
     height: 80vh;
     float: left;
@@ -58,11 +58,11 @@ body {
     flex-direction: column;
 }
 
-.col-dx > div.small {
+.thumbnail > div.small {
     height: calc(100% / 5);
 }
 
-.col-dx .arrow-up {
+.thumbnail .arrow-up {
     margin-top: 5px;
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@ body {
     transform: translateX(-50%);
 }
 
-.col-dx .arrow-down {
+.thumbnail .arrow-down {
     margin-bottom: 5px;
     position: absolute;
     bottom: 0;
@@ -78,8 +78,8 @@ body {
     transform: translateX(-50%);
 }
 
-.col-dx .arrow-up,
-.col-dx .arrow-down {
+.thumbnail .arrow-up,
+.thumbnail .arrow-down {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -89,9 +89,9 @@ body {
     text-align: center;
 }
 
-.col-dx .arrow-up > i, 
-.col-dx .arrow-up > i {
-    font-size: 20px;
+.thumbnail .arrow-up > i, 
+.thumbnail .arrow-down > i {
+    font-size: 18px;
 }
 
 /* *** debug *** */
