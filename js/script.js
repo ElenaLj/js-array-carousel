@@ -15,7 +15,7 @@ const mySlider = document.querySelector(".slider");
     <div class="slider-items">
         <img src="${imagesArray[i]}" alt="">
     </div>
-    `;
+    `
 
     myThumbnail.innerHTML += `
      <div class="img-container">

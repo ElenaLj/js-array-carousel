@@ -41,10 +41,23 @@ body {
 .slider-items {
     height: 80vh;
     display: none;
+    position: relative;
 }
 
 .slider-items.active {
     display: block;
+}
+
+ .text {
+     width: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+.text > * {
+    text-align: right;
+    color: white;
 }
 
 .slider img,
